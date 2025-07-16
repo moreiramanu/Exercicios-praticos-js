@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elemento">
+        <p>Elemento que será removido.</p>
+    </div>
+    <button onclick="removerElemento()">Clique aqui para remover o elemento.</button>
+    <script>
+        function removerElemento() {
+        const elemento = document.getElementById('elemento');
+        elemento.remove();
+        }
+    </script>
+</body>
+</html>

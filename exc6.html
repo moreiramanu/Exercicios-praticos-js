@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elemento" class="classe">
+    <p>Meu elemento.</p>
+    </div>
+    <script>
+        const elemento = document.getElementById("elemento");
+        elemento.classList.add("novaClasse");
+    </script>
+    <style>
+        .classe{
+         color: pink;
+        }
+        .novaClasse{
+            font-weight: bold;
+            font-size: 100px;
+        }
+    </style>
+</body>
+</html>

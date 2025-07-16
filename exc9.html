@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="handleClick('elemento')">Clique aqui para alternar a visibilidade do elemento.</button>
+    <div id="elemento" style="display:block;">
+        Elemento que será alternado.
+    </div>
+    <script>
+        function handleClick(id) {
+            const elemento = document.getElementById(id)
+            if (elemento) {
+                if (elemento.style.display === "none") {
+                    elemento.style.display = "block";
+
+                }
+                else {
+                    elemento.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

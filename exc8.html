@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick ="exibir()">Clique aqui para exibir o valor digitado!</button>
+    <div id="valorExibido"></div>
+    <script>
+        function exibir(){
+        const inputElement = document.getElementById("input");
+        const valor = inputElement.value;
+        document.getElementById("valorExibido").innerText = "Valor: " + valor;
+        }
+    </script>
+</body>
+</html>
