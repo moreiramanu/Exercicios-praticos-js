@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <select id="selecao">
+        <option value="opc1">Opção n° 1</option>
+        <option value="opc2">Opção n° 2</option>
+        <option value="opc3">Opção n° 3</option>
+    </select>
+</form>
+<div id="div">Conteúdo padrão.</div>
+
+<script defer>
+    const select = document.getElementById("selecao");
+    const div = document.getElementById("div");
+
+    select.addEventListener('change', function () {
+        const selectedValue = select.value;
+
+        if (selectedValue === "opc1") {
+            div.textContent = "Opção n° 1.";
+        } else if (selectedValue === "opc2") {
+            div.textContent = "Opção n° 2.";
+        } else if (selectedValue === "opc3") {
+            div.textContent = "Opção n° 3.";
+        } else {
+            div.textContent = "Opção não selecionada.";
+        }
+    });
+</script>
+</body>
+</html>

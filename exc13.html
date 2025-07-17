@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elementoPai1" style="background-color: brown; padding: 10px; margin-bottom: 10px;">
+    <div id="elementoFilho">Elemento filho</div>
+  </div>
+
+  <div id="elementoPai2" style="background-color: blueviolet; padding: 10px; margin-bottom: 10px;">
+    <p>Elemento pai - destino.</p>
+  </div>
+
+  <button onclick="moverElemento()">Mover Elemento</button>
+
+  <script defer>
+    function moverElemento() {
+      const filho = document.getElementById("elementoFilho");
+      const novoPai = document.getElementById("elementoPai2"); 
+      novoPai.appendChild(filho);
+    }
+    </script>
+</body>
+</html>

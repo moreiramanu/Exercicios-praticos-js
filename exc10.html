@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>     
+    </ul>
+    <script defer>
+        function adicionarItemLista(NovoItemLista, listaId){
+            const lista = document.getElementById(listaId);
+            const novoItem = document.createElement('li');        
+            novoItem.textContent = "Texto do novo item";
+            lista.appendChild(novoItem);
+        }
+        adicionarItemLista("texto do novo item", "lista")
+    </script>
+</body>
+</html>
+</head>
+<body>
+    

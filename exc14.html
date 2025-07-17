@@ -6,13 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-<button onclick="mudarImagem()">Clique aqui para mudar a imagem!</button>
-<img id="imagem" src="image.png"/>
+    <button id="botao">Clique em mim!</button>
 <script defer>
-  function mudarImagem() {
-    img = document.getElementById("imagem");
-    img.src="imagem_copy_2"
-  }
+    const botao = document.getElementById("botao");
+    botao.disabled = true;
 </script>
 </body>
 </html>

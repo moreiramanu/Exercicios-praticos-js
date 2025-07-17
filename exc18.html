@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        input:valid {
+                border:2px solid green;
+            }
+        input:invalid{
+            border: 2px solid red
+        }
+        .mensagem{
+            display:none;
+        }
+    </style>
+    <form onsubmit ="submeter(this)">
+        <div>
+            <label for ="q1">Insira seu nome:</label>
+            <input id="q1" type="text" required />
+        </div>
+        <div>
+        <p style ="color:red" class="mensagem">Por favor, insira um endereço  de e-mail valido.</p>
+        <label for="q1">Insira seu e-mail:</label>
+        <input id="q2" type="text" required/>
+        </div>
+        <button type="submit">Enviar Informações</button>
+    </form>
+    <script>
+        function submeter(formulario){
+            event.preventDefault();
+            const nome = formulario.q1.value;
+            const email = formulario.q2.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+          const mensagem = document.querySelector(".mensagem");
+          mensagem.style.display = "block";
+        }
+        }
+    </script>
+</body>
+</html>
