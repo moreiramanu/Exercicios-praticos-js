@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textoOriginal" placeholder="Digite seu texto aqui."/>
+<button onclick="maiusculas()">Converter</button>
+<div id="convertido"></div>
+<script>
+    function maiusculas(){
+        const texto = document.getElementById("textoOriginal").value;
+        const maiusculas = texto.toUpperCase();
+        document.getElementById("convertido").innerText = maiusculas;
+    }
+</script>
+</body>
+</html>
